@@ -1,5 +1,5 @@
 mod pages;
-mod prompts
+mod prompts;
 
 pub use pages::*;
 pub use prompts::*;
