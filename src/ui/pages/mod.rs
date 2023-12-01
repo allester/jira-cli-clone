@@ -46,7 +46,7 @@ impl Page for HomePage {
 
         match input {
             "q" => Ok(Some(Action::Exit)),
-            "c" => Ok(Some(Action::Exit)),
+            "c" => Ok(Some(Action::CreateEpic)),
             input => {
                 if let Ok(epic_id) = input.parse::<u32>() {
                     if epics.contains_key(&epic_id) {

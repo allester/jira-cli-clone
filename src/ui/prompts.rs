@@ -37,10 +37,10 @@ fn create_epic_prompt() -> Epic {
 fn create_story_prompt() -> Story {
     println!("----------------------------");
 
-    println!("Epic Name: ");
+    println!("Story Name: ");
     let story_name = get_user_input();
 
-    println!("Epic Description: ");
+    println!("Story Description: ");
     let story_description = get_user_input();
 
     let story = Story::new(story_name.trim().to_owned(), story_description.trim().to_owned());
